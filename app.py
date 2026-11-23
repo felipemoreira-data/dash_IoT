@@ -7,7 +7,7 @@ from dash import Dash, Input, Output, callback, dcc, html, no_update
 from plotly.subplots import make_subplots
 
 
-CSV = Path(__file__).resolve().parent / "data" / "leituras_tomada_19-10_a_06-11.csv"
+CSV = Path(__file__).resolve().parent / "data" / "leituras_tomada_iot_finais.csv"
 BRASILIA = timezone(timedelta(hours=-3))
 
 AZUL = "#245dd8"
