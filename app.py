@@ -210,6 +210,7 @@ def graficos_detalhe(data):
 
 
 app = Dash(__name__, title="Energia em dados", update_title=None)
+server = app.server
 
 app.layout = html.Main([
     html.Header([
