@@ -1,0 +1,137 @@
+:root {
+    color-scheme: light;
+    font-family: system-ui, sans-serif;
+    color: #172840;
+    background: #f0f4f9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 24px 18px;
+}
+
+.cabecalho {
+    background: linear-gradient(115deg, #10243f, #194980);
+    color: #fff;
+    padding: 32px;
+    border-radius: 18px 18px 0 0;
+}
+
+.cabecalho p {
+    color: #bfdbff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    margin: 3px 0 5px;
+}
+
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    color: #50617a;
+    margin: 5px 0 0;
+}
+
+.abas {
+    margin-bottom: 18px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: end;
+    flex-wrap: wrap;
+    margin: 0 0 18px;
+}
+
+.controle label {
+    display: block;
+    font-size: 0.86rem;
+    font-weight: 650;
+    margin-bottom: 4px;
+}
+
+.controle.data {
+    min-width: 185px;
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.indicador,
+.grafico {
+    background: #fff;
+    border: 1px solid #dce5ef;
+    border-radius: 14px;
+}
+
+.indicador {
+    padding: 16px 18px;
+}
+
+.indicador span {
+    color: #50617a;
+}
+
+.indicador strong {
+    display: block;
+    font-size: 1.85rem;
+    margin-top: 4px;
+}
+
+.grafico {
+    padding: 18px 16px 4px;
+    margin: 0 0 16px;
+}
+
+.grafico h3,
+.grafico > p {
+    margin-left: 5px;
+}
+
+footer {
+    color: #50617a;
+    font-size: 0.85rem;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 540px) {
+    main {
+        padding: 12px;
+    }
+
+    .cabecalho {
+        padding: 22px;
+    }
+
+    .grafico {
+        padding: 12px 5px 2px;
+    }
+}
